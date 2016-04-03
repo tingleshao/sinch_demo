@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B00D801CAA6E4800946DF9 /* MNCChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B00D7F1CAA6E4800946DF9 /* MNCChatMessageCell.m */; };
+		24B00D831CAA6EAB00946DF9 /* MNCChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B00D821CAA6EAA00946DF9 /* MNCChatMessage.m */; };
+		24B00D861CACF59200946DF9 /* MNCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B00D851CACF59200946DF9 /* MNCLoginViewController.m */; };
 		24E37D5A1CA814850081136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37D591CA814850081136E /* main.m */; };
 		24E37D5D1CA814850081136E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37D5C1CA814850081136E /* AppDelegate.m */; };
-		24E37D601CA814850081136E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37D5F1CA814850081136E /* ViewController.m */; };
 		24E37D631CA814850081136E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E37D611CA814850081136E /* Main.storyboard */; };
 		24E37D651CA814850081136E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E37D641CA814850081136E /* Assets.xcassets */; };
 		24E37D681CA814850081136E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E37D661CA814850081136E /* LaunchScreen.storyboard */; };
 		24E37D731CA814850081136E /* sinch_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37D721CA814850081136E /* sinch_demoTests.m */; };
 		24E37D7E1CA814850081136E /* sinch_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37D7D1CA814850081136E /* sinch_demoUITests.m */; };
+		24E37D8C1CA818FA0081136E /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D8B1CA818FA0081136E /* Sinch.framework */; };
+		24E37D8E1CA819870081136E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D8D1CA819870081136E /* AVFoundation.framework */; };
+		24E37D901CA819910081136E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D8F1CA819910081136E /* AudioToolbox.framework */; };
+		24E37D921CA8199C0081136E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D911CA8199C0081136E /* Security.framework */; };
+		24E37D941CA81A5E0081136E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D931CA81A5E0081136E /* libc++.tbd */; };
+		24E37D961CA81A6B0081136E /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D951CA81A6B0081136E /* VideoToolbox.framework */; };
+		24E37D981CA81A740081136E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D971CA81A740081136E /* CoreMedia.framework */; };
+		24E37D9A1CA81A7C0081136E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D991CA81A7C0081136E /* CoreVideo.framework */; };
+		24E37D9C1CA81A820081136E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D9B1CA81A820081136E /* GLKit.framework */; };
+		24E37D9E1CA81A900081136E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D9D1CA81A900081136E /* OpenGLES.framework */; };
+		24E37DA01CA81A960081136E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37D9F1CA81A960081136E /* QuartzCore.framework */; };
+		24E37DA21CA81B870081136E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37DA11CA81B870081136E /* CoreGraphics.framework */; };
+		24E37DA41CA81BE40081136E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E37DA31CA81BE40081136E /* UIKit.framework */; };
+		24E37DA81CA81F420081136E /* MNCChatMateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37DA71CA81F420081136E /* MNCChatMateListViewController.m */; };
+		24E37DAB1CA828DC0081136E /* MNCDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E37DAA1CA828DC0081136E /* MNCDialogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24B00D7E1CAA6E4800946DF9 /* MNCChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCChatMessageCell.h; sourceTree = "<group>"; };
+		24B00D7F1CAA6E4800946DF9 /* MNCChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCChatMessageCell.m; sourceTree = "<group>"; };
+		24B00D811CAA6EAA00946DF9 /* MNCChatMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCChatMessage.h; sourceTree = "<group>"; };
+		24B00D821CAA6EAA00946DF9 /* MNCChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCChatMessage.m; sourceTree = "<group>"; };
+		24B00D841CACF59200946DF9 /* MNCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCLoginViewController.h; sourceTree = "<group>"; };
+		24B00D851CACF59200946DF9 /* MNCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCLoginViewController.m; sourceTree = "<group>"; };
 		24E37D551CA814850081136E /* sinch_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinch_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E37D591CA814850081136E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24E37D5B1CA814850081136E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24E37D5C1CA814850081136E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		24E37D5E1CA814850081136E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		24E37D5F1CA814850081136E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		24E37D621CA814850081136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24E37D641CA814850081136E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E37D671CA814850081136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +72,24 @@
 		24E37D791CA814850081136E /* sinch_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinch_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E37D7D1CA814850081136E /* sinch_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sinch_demoUITests.m; sourceTree = "<group>"; };
 		24E37D7F1CA814850081136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E37D8B1CA818FA0081136E /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sinch.framework; sourceTree = "<group>"; };
+		24E37D8D1CA819870081136E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		24E37D8F1CA819910081136E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		24E37D911CA8199C0081136E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		24E37D931CA81A5E0081136E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		24E37D951CA81A6B0081136E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		24E37D971CA81A740081136E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		24E37D991CA81A7C0081136E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		24E37D9B1CA81A820081136E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		24E37D9D1CA81A900081136E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		24E37D9F1CA81A960081136E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		24E37DA11CA81B870081136E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		24E37DA31CA81BE40081136E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24E37DA51CA81DD40081136E /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
+		24E37DA61CA81F420081136E /* MNCChatMateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCChatMateListViewController.h; sourceTree = "<group>"; };
+		24E37DA71CA81F420081136E /* MNCChatMateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCChatMateListViewController.m; sourceTree = "<group>"; };
+		24E37DA91CA828DC0081136E /* MNCDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCDialogViewController.h; sourceTree = "<group>"; };
+		24E37DAA1CA828DC0081136E /* MNCDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCDialogViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E37DA41CA81BE40081136E /* UIKit.framework in Frameworks */,
+				24E37DA21CA81B870081136E /* CoreGraphics.framework in Frameworks */,
+				24E37DA01CA81A960081136E /* QuartzCore.framework in Frameworks */,
+				24E37D9E1CA81A900081136E /* OpenGLES.framework in Frameworks */,
+				24E37D9C1CA81A820081136E /* GLKit.framework in Frameworks */,
+				24E37D9A1CA81A7C0081136E /* CoreVideo.framework in Frameworks */,
+				24E37D981CA81A740081136E /* CoreMedia.framework in Frameworks */,
+				24E37D961CA81A6B0081136E /* VideoToolbox.framework in Frameworks */,
+				24E37D941CA81A5E0081136E /* libc++.tbd in Frameworks */,
+				24E37D921CA8199C0081136E /* Security.framework in Frameworks */,
+				24E37D901CA819910081136E /* AudioToolbox.framework in Frameworks */,
+				24E37D8E1CA819870081136E /* AVFoundation.framework in Frameworks */,
+				24E37D8C1CA818FA0081136E /* Sinch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +133,19 @@
 		24E37D4C1CA814840081136E = {
 			isa = PBXGroup;
 			children = (
+				24E37DA31CA81BE40081136E /* UIKit.framework */,
+				24E37DA11CA81B870081136E /* CoreGraphics.framework */,
+				24E37D9F1CA81A960081136E /* QuartzCore.framework */,
+				24E37D9D1CA81A900081136E /* OpenGLES.framework */,
+				24E37D9B1CA81A820081136E /* GLKit.framework */,
+				24E37D991CA81A7C0081136E /* CoreVideo.framework */,
+				24E37D971CA81A740081136E /* CoreMedia.framework */,
+				24E37D951CA81A6B0081136E /* VideoToolbox.framework */,
+				24E37D931CA81A5E0081136E /* libc++.tbd */,
+				24E37D911CA8199C0081136E /* Security.framework */,
+				24E37D8F1CA819910081136E /* AudioToolbox.framework */,
+				24E37D8D1CA819870081136E /* AVFoundation.framework */,
+				24E37D8B1CA818FA0081136E /* Sinch.framework */,
 				24E37D571CA814850081136E /* sinch_demo */,
 				24E37D711CA814850081136E /* sinch_demoTests */,
 				24E37D7C1CA814850081136E /* sinch_demoUITests */,
@@ -101,14 +166,23 @@
 		24E37D571CA814850081136E /* sinch_demo */ = {
 			isa = PBXGroup;
 			children = (
+				24E37DA51CA81DD40081136E /* Config.h */,
 				24E37D5B1CA814850081136E /* AppDelegate.h */,
 				24E37D5C1CA814850081136E /* AppDelegate.m */,
-				24E37D5E1CA814850081136E /* ViewController.h */,
-				24E37D5F1CA814850081136E /* ViewController.m */,
 				24E37D611CA814850081136E /* Main.storyboard */,
 				24E37D641CA814850081136E /* Assets.xcassets */,
 				24E37D661CA814850081136E /* LaunchScreen.storyboard */,
 				24E37D691CA814850081136E /* Info.plist */,
+				24E37DA61CA81F420081136E /* MNCChatMateListViewController.h */,
+				24E37DA71CA81F420081136E /* MNCChatMateListViewController.m */,
+				24E37DA91CA828DC0081136E /* MNCDialogViewController.h */,
+				24E37DAA1CA828DC0081136E /* MNCDialogViewController.m */,
+				24B00D7E1CAA6E4800946DF9 /* MNCChatMessageCell.h */,
+				24B00D7F1CAA6E4800946DF9 /* MNCChatMessageCell.m */,
+				24B00D811CAA6EAA00946DF9 /* MNCChatMessage.h */,
+				24B00D821CAA6EAA00946DF9 /* MNCChatMessage.m */,
+				24B00D841CACF59200946DF9 /* MNCLoginViewController.h */,
+				24B00D851CACF59200946DF9 /* MNCLoginViewController.m */,
 				24E37D581CA814850081136E /* Supporting Files */,
 			);
 			path = sinch_demo;
@@ -273,8 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E37D601CA814850081136E /* ViewController.m in Sources */,
+				24B00D861CACF59200946DF9 /* MNCLoginViewController.m in Sources */,
+				24B00D831CAA6EAB00946DF9 /* MNCChatMessage.m in Sources */,
+				24E37DAB1CA828DC0081136E /* MNCDialogViewController.m in Sources */,
 				24E37D5D1CA814850081136E /* AppDelegate.m in Sources */,
+				24E37DA81CA81F420081136E /* MNCChatMateListViewController.m in Sources */,
+				24B00D801CAA6E4800946DF9 /* MNCChatMessageCell.m in Sources */,
 				24E37D5A1CA814850081136E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +494,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = sinch_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cshao.sinch-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -427,8 +515,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = sinch_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cshao.sinch-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -501,6 +599,7 @@
 				24E37D841CA814850081136E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24E37D851CA814850081136E /* Build configuration list for PBXNativeTarget "sinch_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +608,7 @@
 				24E37D871CA814850081136E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24E37D881CA814850081136E /* Build configuration list for PBXNativeTarget "sinch_demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +617,7 @@
 				24E37D8A1CA814850081136E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
