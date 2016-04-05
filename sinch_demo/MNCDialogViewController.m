@@ -15,11 +15,9 @@
 //@property (strong, nonatomic) MNCDialogViewController *activeDialogViewController;  /* add this line */
 //@property (strong, nonatomic) UITextField *activeTextField;
 
-
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITextField *messageEditField;
 @property (strong, nonatomic) IBOutlet UITableView *historicalMessagesTableView;
-
 
 @end
 
@@ -141,7 +139,29 @@
 
 -(void)sendMessage:(id)sender
 {
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSLog(@"Send message button clicked!");
+    MNCChatMessage *message = [[MNCChatMessage alloc] init];
+    
+    //
+//    @property (nonatomic, strong) NSString* messageId;
+    
+//    @property (nonatomic, strong) NSArray* recipientIds;
+    
+//    @property (nonatomic, strong) NSString* senderId;
+    
+//    @property (nonatomic, strong) NSString* text;
+    
+//    @property (nonatomic, strong) NSDictionary* headers;
+    
+//    @property (nonatomic, strong) NSDate* timestamp;
+//
+    message.senderId = self.myUserId;
+    message.text =self.messageEditField.text;
+    
+   [self.messageArray addObject:message];
+    [self.historicalMessagesTableView reloadData];
+ //   [self scrollTableToBottom];
+     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate sendTextMessage:self.messageEditField.text toRecipient:self.chatMateId];
 }
 
@@ -165,6 +185,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MNCChatMessageCell *messageCell = [tableView dequeueReusableCellWithIdentifier:@"MessageListPrototypeCell" forIndexPath:indexPath];
+    NSLog(@"message array length: %lu", [self.messageArray count]);
+    
     [self configureCell:messageCell forIndexPath:indexPath];
     
     return messageCell;
@@ -197,13 +219,10 @@
 
 // TODO: does not handle Parse
 - (void)retrieveMessagesFromParseWithChatMateID:(NSString *)chatMateId {
-    NSLog(@"self user id and chat mate id: %@ %@", self.myUserId, self.chatMateId );
-    
+    NSLog(@"self user id and chat mate id: %@ %@", self.myUserId, self.chatMateId);
     
     NSArray *userNames = @[self.myUserId, chatMateId];
     __weak typeof(self) weakSelf = self;
-    
-    
     
 // //   PFQuery *query = [PFQuery queryWithClassName:@"SinchMessage"];
 // //   [query whereKey:@"senderId" containedIn:userNames];
